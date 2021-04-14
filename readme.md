@@ -1,7 +1,7 @@
 # Project Name
 
-- **Author:** dfadfadfadfsfa
-- **Link to Live Site:** fdfadadfadfsdfadfadf
+- **Author:** Valerie Larson
+- **Link to Live Site:** URL
 
 
 ## Project Summary
@@ -9,6 +9,9 @@
 
 
 ## Technology Used
+- Trello
+- JustInMind
+- DRAWIO
 
 
 ## Models

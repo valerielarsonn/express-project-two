@@ -1,15 +1,20 @@
-// grab environment variables
+// Grab environment variables
 require("dotenv").config();
+
 // IMPORT EXPRESS
 const express = require("express");
+
 // IMPORT DATABASE CONNECTION
 const mongoose = require("./db/connection");
+
 // IMPORT MERCED LOGGER
 const { log } = require("mercedlogger");
+
 //IMPORT MIDDLEWARE
 const methodOverride = require("method-override");
 const morgan = require("morgan");
 const cors = require("cors");
+
 // GET PORT FROM ENV OR DEFAULT PORT
 const PORT = process.env.PORT || "2021";
 const SECRET = process.env.SECRET || "secret"

@@ -17,8 +17,8 @@
 ## Models
 
 Sample Model:
- - name => String
- - age => number
+ - Name => String
+ - Address => String
 
 
 ## Route Map

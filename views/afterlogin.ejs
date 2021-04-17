@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+    
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("partials/head") %>
+
+    
+    <body class= "main">
+        <!-- THE HEADER TAG PARTIAL -->
+        <%- include("partials/header") %>
+        <main>
+            <a href="/auth/logout"><button class="button">Logout</button></a>
+            <h1>Denver</h1>
+            <a href="/city/denver" ><img src="https://images.squarespace-cdn.com/content/v1/52991237e4b06b094787fe1d/1551636924167-JM14N68ZL3UBHRX8GV5D/ke17ZwdGBToddI8pDm48kMP-ZZvD22eVon8l8OgVSx4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKchB_s_lSPOhlvrAn825I_D9ubi2zwRmU5bp0PYOVKC765VDnk5UarU3jFeYwb0-YV/denver-sunrise.jpg?format=2500w" alt="Denver" width="500" height="600"></a>
+            <br>
+            <a href="/city/denver/new"><button class= "denverSpot"> New Spot </button></a>
+            <br>
+            <h1>Austin</h1>
+            <a href="/city/austin" ><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/austin-skyline-cityscape-at-night-dszc.jpg" alt="Austin" width="500" height="600"></a>
+            <br>
+            <a href="/city/austin/new"><button class= "austinSpot"> New Spot </button></a>
+            <br>
+            <h1>New York</h1>
+            <a href="/city/newyork" ><img src="https://dailygazette.com/wp-content/uploads/fly-images/139027/fe69c29be60ca615760f6a70670076b8-940x940.jpg" alt="New York" width="500" height="600"></a>
+            <br>
+            <a href="/city/newyork/new"><button class= "nySpot"> New Spot </button></a>
+        </main>
+        <!-- THE HEAD TAG PARTIAL -->
+        <%- include("partials/footer") %>
+    </body>
 </html>

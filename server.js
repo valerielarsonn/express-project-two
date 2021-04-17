@@ -18,7 +18,12 @@ const cors = require("cors");
 // GET PORT FROM ENV OR DEFAULT PORT
 const PORT = process.env.PORT || "2021";
 const SECRET = process.env.SECRET || "secret"
+
+
 const HomeRouter = require("./routes/home.js");
+const AuthRouter = require("./routes/auth.js");
+const CityRouter = require("./routes/city.js");
+
 // Sessions Middleware
 const session = require("express-session"); // create session cookies
 const connect = require("connect-mongodb-session")(session) // store cookies in mongo
@@ -64,8 +69,12 @@ app.use(
 // Routes and Routers
 /////////////////////////////////////
 
-//HomeRouter
+//Mounting Routes
 app.use("/", HomeRouter);
+app.use("/auth", AuthRouter);
+app.use("/city", CityRouter);
+
+
 
 /////////////////////////////////////
 // App Listener

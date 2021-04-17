@@ -9,17 +9,14 @@ const newLocation = new Schema({
     imageUrl: String
 });
 
-const newReview = new Schema({
-    rating: Number,
-    review: String
-});
 
 const UserSchema = new Schema(
     {
         username: { type: String, unique: true, required: true },
         password: { type: String, required: true},
-        locations: [newLocation],
-        reviews: [newReview]
+        denverSpots: [newLocation],
+        austinSpots: [newLocation],
+        newyorkSpots: [newLocation]
     },
     { timestamps: true }
 );
